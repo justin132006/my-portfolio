@@ -1,0 +1,22 @@
+#main{
+    height: 87vh;
+}
+#contentArea{
+    width: 100%;
+    overflow: scroll;
+    background-color: black;
+}
+#sec1{
+    color: white;
+    width: 97%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    padding-left: 30px;
+}
+#sec2{
+    color: white;
+    width: 97%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    padding-left: 30px;
+}

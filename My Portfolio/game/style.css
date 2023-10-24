@@ -1,0 +1,80 @@
+body{
+    font-family: sans-serif;
+    width: 1300px;
+    height: 100%;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
+
+.game{
+    box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+    margin: 0 auto;
+    width: 50%;
+    height: 630px;
+    text-align: center;
+}
+.Gnav{
+    font-weight: 600;
+    padding-top: 35px;
+    font-size: 35px;
+    text-align: center;
+    width: 100%;
+    height: 100px;    
+}
+input{
+    border: transparent;
+    box-shadow: 0 45px 65px rgba(0,0,0,0.50), 10px 10px rgba(0,0,0,0.16);
+    text-align: center;
+    font-size: 57px;
+    width: 170px;
+    height: 150px;
+}
+#check{
+    margin-right: 100px;
+    margin-top: 25px;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: solid;
+    background-color: transparent;
+}
+#reset{
+    margin-top: 25px;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: solid;
+    background-color: transparent;
+}
+#p1{
+    font-size: 25px;
+}
+#p2{
+    font-size: 25px;
+}
+#p3{
+    font-size: 25px;
+}
+#p4{
+    font-size: 25px;
+}
+#img1{
+    position: absolute;
+    top: 2%;
+    left: 37%;
+    height: 300px;
+}
+#resetscore{
+    height: 45px;
+    border-radius: 18px;
+    border:solid;
+    font-size: 20px;
+    background-color: transparent;
+}
+.div2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hide{
+    display: none;
+}
