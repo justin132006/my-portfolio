@@ -293,16 +293,19 @@ nav .fas{
 }
 footer{
     width: 100%;
-    background-color: #ff004f;
-    height: 50px;
+    background-color: #262626;
+    height: 60px;
     text-align: center;
     margin-top: 20px;
-    color: #080808;
-    font-weight: 600;
+    color: #fff;
+    font-weight: 500;
     font-size: 18px;
 }
 footer div{
     padding-top: 20px;
+}
+footer div i {
+    color: #ff004f;
 }
 /* small screen */
 @media only screen and (max-width:600px){
@@ -362,7 +365,7 @@ footer div{
     }
     footer{
         font-size: 13px;
-        font-weight: 600;
+        font-weight: 500;
     }
 }
 @media only screen and (max-width:860px){
