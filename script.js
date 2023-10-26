@@ -21,10 +21,10 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbwo-U7M5aQUOYGG1FGFgy
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                msg.innerHTML = 'Message sent successfully'
+                msg.innerHTML = 'Message sent successfully Thank you!'
                 setTimeout(function(){
                     msg.innerHTML = ''
-                },5000)
+                },3000)
                 form.reset()
             })
             .catch(error => console.error('Error!', error.message))

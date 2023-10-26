@@ -280,11 +280,15 @@ form btn2{
     cursor: pointer;
 }
 #Msg{
-    font-size: 20px;
-    width: 100%;
+    border-radius: 18px;
+    padding-top: 30px;
+    height: 150px;
+    font-size: 23px;
+    width: 250px;
     position: relative;
+    left: 30%;
     top: -10%;
-    color: #ff004f;
+    color: #fff;
     display: block;
     text-align: center;
 }
@@ -299,7 +303,7 @@ footer{
     margin-top: 20px;
     color: #fff;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
 }
 footer div{
     padding-top: 20px;
@@ -397,6 +401,12 @@ footer div i {
     #c-left p{
         font-size: 15px;
     }
+    #Msg{
+        left: 50%;
+        height: 120px;
+        font-size: 17px;
+        width: 130px;
+    }
 }
 @media only screen and (min-width:861px){
     #name{
@@ -430,6 +440,10 @@ footer div i {
         flex-basis: 100%;
     }
     footer{
+        font-size: 20px;
+    }
+    #Msg{
+        height: 110px;
         font-size: 20px;
     }
 }
