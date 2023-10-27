@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS:MEMORY</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+    <nav class="flex items-center h-24 justify-between flex-wrap bg-black pl-10 pr-10">
+        <div class="flex items-center flex-shrink-0 text-orange-500 mr-6">
+          <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+          <span class="font-semibold text-xl tracking-tight">JS:MEMORY</span>
+        </div>
+        <div>
+          <h1 id="h1nav" class="flex items-center flex-shrink-0 text-orange-500 font-semibold text-2xl">JavaScript Syntax</h1>
+        </div>
+        <div class="text-orange-500 flex items-center">
+          <span class="text-lg font-semibold ml-2">Found me on:</span>
+          <a href="https://www.facebook.com/profile.php?id=100092442039265" target="_blank"><img src="fb.png" alt="" width="120px"></a>
+        </div>
+      </nav>
+      <!-- component -->
+<div id="main" class="flex  overflow-hidden">
+  <!-- Sidebar -->
+  <div class="w-56 bg-black border-r border-black">
+    <!-- Sidebar Header -->
+    <header class="p-4 border-b border-black flex justify-between items-center bg-black text-orange-500">
+      <h1 class="text-lg font-semibold">JavaScript Tutorial</h1>
+    </header>
+    <!-- Contact List -->
+    <!--list 1 -->
+    <div  class="overflow-y-auto h-5/6 p-3  bg-black text-orange-500">
+      <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+        <div class="flex-1 ">
+          <a id="list1" class=" font-semibold">JS Syntax</a>
+        </div>
+      </div>
+      <!-- list 2 -->
+      <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+        <div class="flex-1">
+          <a id="list2" class=" font-semibold">JS Variables</a>
+        </div>
+      </div>
+      <!-- list 3 -->
+      <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-1 rounded-md">
+        <div class="flex-1">
+          <a class="font-semibold">JS Operators</a>
+        </div>
+      </div>
+      <!-- list 4 -->
+      <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+        <div class="flex-1">
+          <a class="font-semibold">JS Data Types</a>
+        </div>
+      </div>
+      <!-- list 5-->
+      <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+        <div class="flex-1">
+          <a class=" font-semibold">JS Function</a>
+        </div>
+      </div>
+      <!-- list 6 -->
+      <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+        <div class="flex-1">
+          <a class="font-semibold">JS Events</a>
+        </div>
+      </div>
+      <!-- list 7 -->
+      <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+        <div class="flex-1">
+          <a class=" font-semibold">JS If Else</a>
+        </div>
+      </div>
+      <!-- list 8 -->
+      <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+        <div class="flex-1">
+          <a class="font-semibold">DOM Methods</a>
+        </div>
+      </div>
+      <!-- list 9 -->
+      <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+        <div class="flex-1">
+          <a class="font-semibold">DOM Document</a>
+        </div>
+      </div>
+      <!-- list 10 -->
+      <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+        <div class="flex-1">
+          <a class="font-semibold">DOM Element</a>
+        </div>
+      </div>
+      <!-- list 11 -->
+      <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+        <div class="flex-1">
+          <a class="font-semibold">DOM Events</a>
+        </div>
+      </div>
+      <!-- list 12 -->
+      <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+        <div class="flex-1">
+          <a class="font-semibold">DOM Event Listener</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Chat Area -->
+  <div  id="contentArea" >
+    <section  id="sec1" class="">
+        <h1 class="text-4xl ">JavaScript Syntax</h1>
+        <br>
+        <p>JavaScript syntax is the set of rules, how JavaScript programs are constructed:</p>
+        <p>// How to create variables: <br>
+          var x;<br>
+          let y;<br>
+          
+          // How to use variables: 
+          x = 5; <br>
+          y = 6; <br>
+          let z = x + y;</p>
+          <br>
+          <br>
+          <h1 class="text-4xl">JavaScript Values</h1>
+          <br>
+          <p>
+            The JavaScript syntax defines two types of values: <br>
+            <br>
+            Fixed values <br>
+            Variable values <br>
+            <br>
+            Fixed values are called Literals. <br>
+            
+            Variable values are called Variables.</p>
+            <br>
+            <h1 class="text-4xl">JavaScript Variables</h1>
+            <br>
+            <p>In a programming language, variables are used to store data values. <br>
+
+              JavaScript uses the keywords var, let and const to declare variables. <br>
+              
+              An equal sign is used to assign values to variables. <br>
+              
+              In this example, x is defined as a variable. Then, x is assigned (given) the value 6: <br>
+              <br>
+              let x;<br>
+              x = 6;</p>
+              <br>
+              <h1 class="text-4xl">JavaScript Operators</h1>
+              <br>
+              <p>JavaScript uses arithmetic operators ( + - * / ) to compute values:</p>
+              <br>
+              <p>(5 + 6) * 10</p>
+              <br>
+              <p>JavaScript uses an assignment operator ( = ) to assign values to variables:</p>
+              <br>
+              <p>
+                let x, y; <br>
+                x = 5; <br>
+                y = 6;
+              </p>
+              <br>
+              <h1>JavaScript Expressions</h1>
+              <br>
+              <p>
+                An expression is a combination of values, variables, and operators, which computes to a value. <br>
+
+                The computation is called an evaluation. <br>
+                
+                For example, 5 * 10 evaluates to 50:</p>
+                <br>
+                <p>
+                  5 * 10 <br>
+                  <br>
+                  Expressions can also contain variable values: <br>
+                  <br>
+                  x * 10 <br>
+                  <br>
+                  The values can be of various types, such as numbers and strings. <br>
+                  For example, "John" + " " + "Doe", evaluates to "John Doe": <br>
+                  <br>
+                  "John" + " " + "Doe"
+                </p>
+    </section>
+
+    <!-- section 2 -->
+    <section id="sec2">
+      <h1 class="text-4xl">JavaScript Variables</h1>
+      <br>
+      <p>
+        JavaScript is a versatile and widely used programming language that allows you to store and manipulate data using variables. Variables are like containers for data that can hold various types of information, such as numbers, text, and more. In this tutorial, we will cover the fundamentals of JavaScript variables, including how to declare, initialize, and use them effectively
+      </p>
+      <br>
+      <h1 class="text-4xl">1. Introduction to Variables</h1>
+      <br>
+      <p>
+        In JavaScript, a variable is a named container that stores data. You can think of variables as labels for data, making it easier to work with information in your code. Variables can hold various types of data, from numbers and strings to objects and functions.
+      </p>
+      <br>
+      <h1 class="text-4xl">2. Declaring Variables</h1>
+      <br>
+      <p>
+        To declare a variable in JavaScript, you use one of three keywords: `var`, `let`, or `const`. Here's how you declare a variable:
+      </p>
+      <br>
+      <p>
+        JavaScript <br>
+        <br>
+        <strong>var</strong> myVariable;  // Declaring a variable using 'var' <br>
+        <br>
+        <strong>let</strong> anotherVariable;  // Declaring a variable using 'let' <br>
+        <br>
+        <strong>conts</strong> constantVariable = 42;  // Declaring and initializing a constant variable using 'const' 
+        </p>
+        <br>
+        <h1>Initializing Variables</h1>
+        <br>
+        <p>After declaring a variable, you can initialize it with a value. Initialization is the process of assigning a value to a variable. Here's how to do it:</p>
+        <br>
+        <p>javascript <br>
+          <br>
+          var age;  // Declaring a variable <br>
+          age = 25;  // Initializing the variable with a value <br>
+          <br>
+          let name;  // Declaring a variable <br>
+          name = "John";  // Initializing the variable with a string value <br>
+          <br>
+          const pi = 3.14;  // Declaring and initializing a constant variable <br>
+          ```
+          <br>
+          You can also declare and initialize a variable in a single step: <br>
+          <br>
+          ```javascript <br>
+          <br>
+          var count = 10;  // Declaring and initializing a variable in one step <br>
+          ```
+          </p>
+    </section>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

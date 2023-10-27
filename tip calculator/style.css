@@ -1,0 +1,45 @@
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+#title{
+    font-size: 3rem;
+}
+#sec1{
+    width: 50%;
+    height: 100vh;
+    background-color: bisque;
+    text-align: center;
+}
+input{
+    font-weight:600;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+select{
+    padding: 0.8rem 1.7rem;
+    margin: 1.5rem 0 ;
+    font-size: 1rem;
+}
+button{
+    margin-left: 1rem;
+    margin-top: 2.2rem;
+    font-weight: 600;
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+}
+#div1{
+    background-color: beige;
+    width: 75%;
+    height: 28vh;
+    margin: 0 auto;
+}
+#result{
+    padding-top: 2rem;
+}
+#resulttip{
+    padding-top: 1rem;
+}
