@@ -39,3 +39,18 @@ function openmenu(){
 function closemenu(){
     sidemenu.style.right = '-200px';
 }
+// Hide show header
+let lastScrollTop = 0;
+window.addEventListener('scroll', () => {
+    const hideShowHeader = document.getElementById('hide-show-header');
+    const scrollTop = window.scrollY;
+
+    if (scrollTop < 600 || scrollTop > lastScrollTop) {
+        hideShowHeader.style.display = 'block';
+        hideShowHeader.style.transform = 'translateY(-100%)';
+    } 
+    else {  
+        hideShowHeader.style.transform = 'translateY(0)';
+    }
+    lastScrollTop = scrollTop;
+});
