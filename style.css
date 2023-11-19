@@ -14,7 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(hutao.png);
+    background-image: url(pictures/hutao.png);
     background-size: cover;
     background-repeat: no-repeat;
 }

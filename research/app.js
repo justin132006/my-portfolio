@@ -1,15 +1,56 @@
-let list1 = document.querySelector('#list1');
-let topNav = document.querySelector('#h1nav');
-let sec1 = document.querySelector('#sec1');
-let list2 = document.querySelector('#list2');
+let tablinks = document.querySelectorAll('.list');
+let tabContents = document.querySelectorAll('.tab-contents');
+let btns = document.querySelectorAll('.btn');
+let h1nav = document.querySelector('#h1nav');
 
-list1.addEventListener('click',show);
-function show(){
-    topNav.textContent = "JavaScript Syntax"
-    sec1.classList.remove('hidden')
-}
-list2.addEventListener('click',show1);
-function show1 (){
-    topNav.textContent = 'JavaScript Variables'
-    sec1.classList.add('hidden')
+function opentab(tabname,tab){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabContent of tabContents){
+        tabContent.classList.remove('active-tab');
+    }
+    for(btn of btns){
+        btn.classList.remove('active-tab');
+    }
+    event.currentTarget.classList.add('active-link');
+    document.getElementById(tab).classList.add('active-tab');
+    document.getElementById(tabname).classList.add('active-tab');
+
+    if(tab == 1){
+        h1nav.textContent = 'JavaScript Syntax'
+    }
+    else if(tab == 2){
+        h1nav.textContent = 'JavaScript Variables'
+    }
+    else if(tab == 3){
+        h1nav.textContent = 'JavaScript Operators'
+    }
+    else if(tab == 4){
+        h1nav.textContent = 'JavaScript Data Types'
+    }
+    else if(tab == 5){
+        h1nav.textContent = 'JavaScript Function'
+    }
+    else if(tab == 6){
+        h1nav.textContent = 'JavaScript Events'
+    }
+    else if(tab == 7){
+        h1nav.textContent = 'JavaScript If Else'
+    }
+    else if(tab == 8){
+        h1nav.textContent = 'DOM Methods'
+    }
+    else if(tab == 9){
+        h1nav.textContent = 'DOM Document'
+    }
+    else if(tab == 10){
+        h1nav.textContent = 'DOM Element'
+    }
+    else if(tab == 11){
+        h1nav.textContent = 'DOM Events'
+    }
+    else if(tab == 12){
+        h1nav.textContent = 'DOM Event Listener'
+    }
 }

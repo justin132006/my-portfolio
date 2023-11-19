@@ -1,22 +1,75 @@
-#main{
-    height: 87vh;
+body{
+    overflow-y: hidden;
 }
 #contentArea{
     width: 100%;
     overflow: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
     background-color: black;
 }
-#sec1{
+.tab-contents{
+    display: none;
     color: white;
     width: 97%;
     margin: 0 auto;
-    padding-bottom: 40px;
     padding-left: 30px;
+    padding-bottom: 200px;
+    padding-top: 25px;
 }
-#sec2{
-    color: white;
-    width: 97%;
-    margin: 0 auto;
-    padding-bottom: 40px;
-    padding-left: 30px;
+.tab-contents.active-tab{
+    display: block;
+}
+.btn.active-tab{
+    text-align: center;
+    font-weight: 600;
+    background-color: rgb(249 115 22);
+    color:black;
+    padding: 9px;
+    border-radius: 12px;
+    font-size: 17px;
+    transition: 0.5s;
+
+}
+.tab-contents h3{
+    font-size: 40px;
+    padding: 25px 0 ;
+}
+.div-out{
+    width: 100%;
+    height: 380px;
+    background-color: rgb(249 115 22);
+    display: grid;
+    padding: 0 3%;
+    padding-top: 20px;
+    border-radius: 12px;
+}
+.div-in{
+    width: 100%;
+    height: 90%;
+    background-color: black;
+    margin: 0 auto; 
+    padding-left: 18px;
+    padding-top: 18px;
+}
+p{
+    font-size: 18px;
+}
+.div-out a{
+    background-color: #f9f6ee;
+    color: black;
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+table td{
+    padding: 5px 50px;
+    text-align: justify;
+    color:  rgb(249 115 22);
 }
