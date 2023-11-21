@@ -4,27 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS:MEMORY</title>
+    <link rel="icon" href="JS.jpg">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a0167181fe.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="flex items-center h-24 justify-between flex-wrap bg-black pl-10 pr-10">
         <div class="flex items-center flex-shrink-0 text-orange-500 mr-6">
           <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
-          <span class="font-semibold text-xl tracking-tight">JS:MEMORY</span>
+          <span id="js" class="font-semibold text-xl tracking-tight">JS:MEMORY</span>
         </div>
-        <div>
+        <div id="divh1">
           <h1 id="h1nav" class="flex items-center flex-shrink-0 text-orange-500 font-semibold text-2xl">JavaScript Syntax</h1>
         </div>
-        <div class="text-orange-500 flex items-center">
+        <div id="fb" class="text-orange-500 flex items-center">
           <span class="text-lg font-semibold ml-2">Found me on:</span>
           <a href="https://www.facebook.com/profile.php?id=100092442039265" target="_blank"><img src="fb.png" alt="" width="120px"></a>
         </div>
+        <i  id="close" class="fas fa-times" onclick="closemenu()" style="color: white;"></i>
+        <i id="open" class="fas fa-bars" onclick="openmenu()" style="color: white;"></i>
       </nav>
       <!-- component -->
 <div id="Sidebar" class="flex h-screen overflow-hidden">
   <!-- Sidebar -->
-  <div class="w-56 bg-black border-r border-black">
+  <div id="side" class="w-56 bg-black border-r border-black">
     <!-- Sidebar Header -->
     <header class="p-4 border-b border-black flex justify-between items-center bg-black text-orange-500">
       <h1 class="text-lg font-semibold">JavaScript Tutorial</h1>
@@ -180,7 +184,7 @@ Variable values are called Variables. <br>
             <p>let x; <br>
               x = 6; <br></p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_variables" target="_blank">Try it Yourself>></a>
         </div>
         <h3>JavaScript Operators</h3>
         <p>JavaScript uses arithmetic operators ( + - * / ) to compute values:</p>
@@ -189,7 +193,7 @@ Variable values are called Variables. <br>
           <div class="div-in">
             <p>(5 + 6) * 10</p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_operators" target="_blank">Try it Yourself>></a>
         </div>
         <br>
         <p>JavaScript uses an assignment operator ( = ) to assign values to variables:</p>
@@ -200,7 +204,7 @@ Variable values are called Variables. <br>
               x = 5; <br>
               y = 6; <br></p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_assign" target="_blank">Try it Yourself>></a>
         </div>
         <h3>JavaScript Expressions</h3>
         <p>
@@ -215,7 +219,7 @@ For example, 5 * 10 evaluates to 50: <br>
           <div class="div-in">
             <p>5 * 10</p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_expressions" target="_blank">Try it Yourself>></a>
         </div>
         <br>
         <p>Expressions can also contain variable values:</p>
@@ -224,7 +228,7 @@ For example, 5 * 10 evaluates to 50: <br>
           <div class="div-in">
             <p>x * 10</p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_expressions_variables" target="_blank">Try it Yourself>></a>
         </div>
         <br>
         <p>
@@ -237,7 +241,7 @@ For example, "John" + " " + "Doe", evaluates to "John Doe": <br>
           <div class="div-in">
             <p>"John" + " " + "Doe"</p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_expressions_strings" target="_blank">Try it Yourself>></a>
         </div>
         <h3>JavaScript Keywords
         </h3>
@@ -253,7 +257,7 @@ The let keyword tells the browser to create variables: <br>
               x = 5 + 6; <br>
               y = x * 10; <br></p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_let" target="_blank">Try it Yourself>></a>
         </div>
         <br>
         <p>The var keyword also tells the browser to create variables:</p>
@@ -264,7 +268,7 @@ The let keyword tells the browser to create variables: <br>
               x = 5 + 6; <br>
               y = x * 10; <br></p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_keywords" target="_blank">Try it Yourself>></a>
         </div>
         <br>
         <p>
@@ -288,7 +292,7 @@ Comments are ignored, and will not be executed: <br>
 <br>
               // x = 6;   I will NOT be executed <br></p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_comments" target="_blank">Try it Yourself>></a>
         </div>
         <h3>JavaScript Identifiers / Names</h3>
         <p>Identifiers are JavaScript names. <br>
@@ -313,7 +317,7 @@ Comments are ignored, and will not be executed: <br>
                   lastName = "Doe"; <br>
                   lastname = "Peterson"; <br></p>
               </div>
-              <a href="">Try it Yourself>></a>
+              <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_case" target="_blank">Try it Yourself>></a>
             </div>
             <br>
             <p>JavaScript does not interpret LET or Let as the keyword let.</p>
@@ -366,7 +370,7 @@ They are automatically declared when first used: <br>
             y = 6; <br>
             z = x + y; <br></p>
         </div>
-        <a href="">Try it Yourself>></a>
+        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_variables_undeclared" target="_blank">Try it Yourself>></a>
       </div>
       <h3>Note</h3>
       <p>It is considered good programming practice to always declare variables before use. <br>
@@ -385,7 +389,7 @@ They are automatically declared when first used: <br>
               var y = 6; <br>
               var z = x + y; <br></p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_variables" target="_blank">Try it Yourself>></a>
         </div>
         <h3>Note</h3>
         <p>
@@ -403,7 +407,7 @@ The var keyword should only be used in code written for older browsers. <br>
               let y = 6; <br>
               let z = x + y; <br></p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_variables_let" target="_blank">Try it Yourself>></a>
         </div>
         <br>
         <div class="div-out h-64">
@@ -413,7 +417,7 @@ The var keyword should only be used in code written for older browsers. <br>
               const y = 6; <br>
               const z = x + y; <br></p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_variables_const" target="_blank">Try it Yourself>></a>
         </div>
         <br>
         <div class="div-out h-64">
@@ -423,7 +427,7 @@ The var keyword should only be used in code written for older browsers. <br>
               const price2 = 6; <br>
               let total = price1 + price2; <br></p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_variables_total" target="_blank">Try it Yourself>></a>
         </div>
         <br>
         <p>
@@ -455,7 +459,7 @@ The value total can be changed. <br>
               <p>let x = 5; <br>
                 let y = 6;<br></p>
             </div>
-            <a href="">Try it Yourself>></a>
+            <a href="" target="_blank">Try it Yourself>></a>
           </div>
           <br>
           <p>
@@ -466,7 +470,7 @@ The value total can be changed. <br>
             <div class="div-in">
               <p>let z = x + y;<br></p>
             </div>
-            <a href="">Try it Yourself>></a>
+            <a href="" target="_blank">Try it Yourself>></a>
           </div>
           <p>From the example above, you can guess that the total is calculated to be 11.</p>
           <h3>Note</h3>
@@ -502,7 +506,7 @@ This is different from algebra. The following does not make sense in algebra: <b
             <div class="div-in">
               <p>x = x + 5<br></p>
             </div>
-            <a href="">Try it Yourself>></a>
+            <a href="" target="_blank">Try it Yourself>></a>
           </div>
           <br>
           <p>  
@@ -537,7 +541,7 @@ If you put a number in quotes, it will be treated as a text string. <br>
                 let person = "John Doe"; <br>
                 let answer = 'Yes I am!';<br></p>
             </div>
-            <a href="">Try it Yourself>></a>
+            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_variables_types" target="_blank">Try it Yourself>></a>
           </div>
           <h3>Declaring a JavaScript Variable</h3>
           <p>
@@ -585,7 +589,7 @@ You declare a JavaScript variable with the var or the let keyword: <br>
                   document.getElementById("demo").innerHTML = carName <br>
                   script<br></p>
                 </div>
-                <a href="">Try it Yourself>></a>
+                <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_variables_create" target="_blank">Try it Yourself>></a>
               </div>
               <h3>Note</h3>
               <p>It's a good programming practice to declare all variables at the beginning of a script.</p>
@@ -602,7 +606,7 @@ Start the statement with let and separate the variables by comma: <br>
                 <div class="div-in">
                   <p>let person = "John Doe", carName = "Volvo", price = 200;<br></p>
                 </div>
-                <a href="">Try it Yourself>></a>
+                <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_variables_multi" target="_blank">Try it Yourself>></a>
               </div>
               <br>
               <p>
@@ -616,7 +620,7 @@ Start the statement with let and separate the variables by comma: <br>
                     carName = "Volvo", <br>
                     price = 200;<br></p>
                 </div>
-                <a href="">Try it Yourself>></a>
+                <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_variables_multiline" target="_blank">Try it Yourself>></a>
               </div>
               <h3>Value = undefined
               </h3>
@@ -632,7 +636,7 @@ The variable carName will have the value undefined after the execution of this s
                 <div class="div-in">
                   <p>let carName;<br></p>
                 </div>
-                <a href="">Try it Yourself>></a>
+                <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_variables_undefined" target="_blank">Try it Yourself>></a>
               </div>
               <h3>
                 Re-Declaring JavaScript Variables
@@ -648,7 +652,7 @@ The variable carName will still have the value "Volvo" after the execution of th
                   <p>var carName = "Volvo"; <br>
                     var carName;<br></p>
                 </div>
-                <a href="">Try it Yourself>></a>
+                <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_variables_redefine" target="_blank">Try it Yourself>></a>
               </div>
           <h3>Note</h3>
             <p>
@@ -669,7 +673,7 @@ let carName; <br>
               <div class="div-in">
                 <p>let x = 5 + 2 + 3;<br></p>
               </div>
-              <a href="">Try it Yourself>></a>
+              <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_variables_add_numbers" target="_blank">Try it Yourself>></a>
             </div>
             <br>
             <p>
@@ -681,7 +685,7 @@ let carName; <br>
               <div class="div-in">
                 <p>let x = "John" + " " + "Doe";<br></p>
               </div>
-              <a href="">Try it Yourself>></a>
+              <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_variables_add_strings" target="_blank">Try it Yourself>></a>
             </div>
             <br>
             <p>
@@ -693,7 +697,7 @@ let carName; <br>
               <div class="div-in">
                 <p>let x = "5" + 2 + 3;<br></p>
               </div>
-              <a href="">Try it Yourself>></a>
+              <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_variables_add_string_number" target="_blank">Try it Yourself>></a>
             </div>
             <h3>Note</h3>
             <p>
@@ -709,7 +713,7 @@ let carName; <br>
               <div class="div-in">
                 <p>let x = 2 + 3 + "5";<br></p>
               </div>
-              <a href="">Try it Yourself>></a>
+              <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_variables_add_number_string" target="_blank">Try it Yourself>></a>
             </div>
             <h3>JavaScript Dollar Sign $</h3>
             <p>
@@ -723,7 +727,7 @@ let carName; <br>
                   let $$$ = 2; <br>
                   let $myMoney = 5;<br></p>
               </div>
-              <a href="">Try it Yourself>></a>
+              <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_variables_dollar" target="_blank">Try it Yourself>></a>
             </div>
             <br>
             <p>
@@ -741,7 +745,7 @@ In the JavaScript library jQuery, for instance, the main function $ is used to s
                   let _x = 2; <br>
                   let _100 = 5;<br></p>
               </div>
-              <a href="">Try it Yourself>></a>
+              <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_variables_underscore" target="_blank">Try it Yourself>></a>
             </div>
             <br>
             <p>
@@ -767,7 +771,7 @@ In the JavaScript library jQuery, for instance, the main function $ is used to s
           <div class="div-in">
             <p>let x = 10;</p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_oper_equal" target="_blank">Try it Yourself>></a>
           <div class="div-in">
             <p>
               // Assign the value 5 to x <br>
@@ -778,7 +782,7 @@ let y = 2; <br>
 let z = x + y; <br>
             </p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_oper" target="_blank">Try it Yourself>></a>
         </div>
         <h3>JavaScript Addition</h3>
         <p>
@@ -794,7 +798,7 @@ let y = 2; <br>
 let z = x + y; <br>
             </p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_oper_add" target="_blank">Try it Yourself>></a>
         </div>
         <h3>JavaScript Multiplication</h3>
         <p>The Multiplication Operator (*) multiplies numbers:</p>
@@ -806,7 +810,7 @@ let z = x + y; <br>
 let y = 2; <br>
 let z = x * y; <br></p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_oper_mult" target="_blank">Try it Yourself>></a>
         </div>
         <h3>Types of JavaScript Operators</h3>
         <p>There are different types of JavaScript operators: <br>
@@ -830,7 +834,7 @@ let z = x * y; <br></p>
 let x = (100 + 50) * a; <br>
               </p>
             </div>
-            <a href="">Try it Yourself>></a>
+            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_arithmetic_expressions" target="_blank">Try it Yourself>></a>
           </div>
           <br>
           <p>
@@ -856,7 +860,7 @@ let x = (100 + 50) * a; <br>
                   <p>let x = 10;  <br>
                     x += 5; <br></p>
                 </div>
-                <a href="">Try it Yourself>></a>
+                <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_oper_plusequal" target="_blank">Try it Yourself>></a>
               </div>
               <br>
               <br>
@@ -954,7 +958,7 @@ JavaScript will treat the example above as:<br>
           <div class="div-in">
             <p>let x = 16 + "Volvo";</p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_addstring" target="_blank">Try it Yourself>></a>
         </div>
         <br>
         <div class="div-out h-48">
@@ -962,7 +966,7 @@ JavaScript will treat the example above as:<br>
           <div class="div-in">
             <p>let x = "Volvo" + 16;</p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_addstring2" target="_blank">Try it Yourself>></a>
         </div>
         <br>
         <p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:
@@ -978,7 +982,7 @@ JavaScript will treat the example above as:<br>
           <div class="div-in">
             <p>20Volvo</p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_addstrings_1" target="_blank">Try it Yourself>></a>
         </div>
         <br>
         <div class="div-out">
@@ -990,7 +994,7 @@ JavaScript will treat the example above as:<br>
           <div class="div-in">
             <p>Volvo164</p>
           </div>
-          <a href="">Try it Yourself>></a>
+          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_addstrings_2" target="_blank">Try it Yourself>></a>
         </div>
         <br>
         <p>In the first example, JavaScript treats 16 and 4 as numbers, until it reaches "Volvo". <br>
@@ -1006,7 +1010,7 @@ JavaScript will treat the example above as:<br>
                 x = 5;       // Now x is a Number <br>
                 x = "John";  // Now x is a String <br></p>
             </div>
-            <a href="">Try it Yourself>></a>
+            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_dynamic" target="_blank">Try it Yourself>></a>
           </div>
           <h3>JavaScript Strings</h3>
           <p>A string (or a text string) is a series of characters like "John Doe". <br>
@@ -1021,7 +1025,7 @@ JavaScript will treat the example above as:<br>
                   // Using single quotes: <br>
                   let carName2 = 'Volvo XC60';<br></p>
               </div>
-              <a href="">Try it Yourself>></a>
+              <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_string_quotes" target="_blank">Try it Yourself>></a>
             </div>
             <br>
             <p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
@@ -1038,7 +1042,7 @@ JavaScript will treat the example above as:<br>
                   // Double quotes inside single quotes: <br>
                   let answer3 = 'He is called "Johnny"';<br></p>
               </div>
-              <a href="">Try it Yourself>></a>
+              <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_string" target="_blank">Try it Yourself>></a>
             </div>
             <h3>JavaScript Numbers</h3>
             <p>
@@ -1055,7 +1059,7 @@ Numbers can be written with, or without decimals: <br>
                   // Without decimals: <br>
                   let x2 = 34;<br></p>
               </div>
-              <a href="">Try it Yourself>></a>
+              <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_numbers" target="_blank">Try it Yourself>></a>
             </div>
             <h3>Exponential Notation</h3>
             <p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
@@ -1065,7 +1069,7 @@ Numbers can be written with, or without decimals: <br>
                 <p>let y = 123e5;    // 12300000 <br>
                   let z = 123e-5;   // 0.00123<br></p>
               </div>
-              <a href="">Try it Yourself>></a>
+              <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_numbers_large" target="_blank">Try it Yourself>></a>
             </div>
             <h3>Note</h3>
             <p>Most programming languages have many number types:<br>
@@ -1090,7 +1094,7 @@ Numbers can be written with, or without decimals: <br>
                   <div class="div-in">
                     <p>let x = BigInt("123456789012345678901234567890");<br></p>
                   </div>
-                  <a href="">Try it Yourself>></a>
+                  <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_bigint" target="_blank">Try it Yourself>></a>
                 </div>
                 <h3>JavaScript Booleans</h3>
                 <p>Booleans can only have two values: true or false.</p>
@@ -1104,7 +1108,7 @@ Numbers can be written with, or without decimals: <br>
                       (x == y)       // Returns true <br>
                       (x == z)       // Returns false<br></p>
                   </div>
-                  <a href="">Try it Yourself>></a>
+                  <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_bolean" target="_blank">Try it Yourself>></a>
                 </div>
                 <p>
                   Booleans are often used in conditional testing.
@@ -1120,7 +1124,7 @@ Numbers can be written with, or without decimals: <br>
                     <div class="div-in">
                       <p>const cars = ["Saab", "Volvo", "BMW"];<br></p>
                     </div>
-                    <a href="">Try it Yourself>></a>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_array" target="_blank">Try it Yourself>></a>
                   </div>
                   <br>
                   <p>Array indexes are zero-based, which means the first item is [0], second is [1], and so on.</p>
@@ -1134,7 +1138,7 @@ Numbers can be written with, or without decimals: <br>
                       <div class="div-in">
                         <p>const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};<br></p>
                       </div>
-                      <a href="">Try it Yourself>></a>
+                      <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_object" target="_blank">Try it Yourself>></a>
                     </div>
                     <br>
                     <p>The object (person) in the example above has 4 properties: firstName, lastName, age, and eyeColor.</p>
@@ -1150,7 +1154,7 @@ Numbers can be written with, or without decimals: <br>
                             typeof "John"         // Returns "string" <br>
                             typeof "John Doe"     // Returns "string"<br></p>
                         </div>
-                        <a href="">Try it Yourself>></a>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_typeof_string" target="_blank">Try it Yourself>></a>
                       </div>
                       <br>
                       <div class="div-out h-96">
@@ -1162,7 +1166,7 @@ Numbers can be written with, or without decimals: <br>
                             typeof (3)            // Returns "number" <br>
                             typeof (3 + 4)        // Returns "number"<br></p>
                         </div>
-                        <a href="">Try it Yourself>></a>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_typeof_number" target="_blank">Try it Yourself>></a>
                       </div>
                       <h3>Undefined</h3>
                       <p>In JavaScript, a variable without a value, has the value undefined. The type is also undefined.</p>
@@ -1172,7 +1176,7 @@ Numbers can be written with, or without decimals: <br>
                         <div class="div-in">
                           <p>let car;    // Value is undefined, type is undefined<br></p>
                         </div>
-                        <a href="">Try it Yourself>></a>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_undefined" target="_blank">Try it Yourself>></a>
                       </div>
                       <br>
                       <p>Any variable can be emptied, by setting the value to undefined. The type will also be undefined.
@@ -1185,7 +1189,7 @@ Numbers can be written with, or without decimals: <br>
                           <p>car = undefined;    // Value is undefined, type is undefined
                             <br></p>
                         </div>
-                        <a href="">Try it Yourself>></a>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_undefined_2" target="_blank">Try it Yourself>></a>
                       </div>
                       <h3>Empty Values</h3>
                       <p>An empty value has nothing to do with undefined. <br>
@@ -1197,7 +1201,7 @@ Numbers can be written with, or without decimals: <br>
                             <p>let car = "";    // The value is "", the typeof is "string"
                               <br></p>
                           </div>
-                          <a href="">Try it Yourself>></a>
+                          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_empty" target="_blank">Try it Yourself>></a>
                         </div>
                         </section>
                         <section class="tab-contents" id="function">
@@ -1217,7 +1221,7 @@ A JavaScript function is executed when "something" invokes it (calls it).
                                 }
                                 <br></p>
                             </div>
-                            <a href="">Try it Yourself>></a>
+                            <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_functions" target="_blank">Try it Yourself>></a>
                           </div>
                           <h3>JavaScript Function Syntax</h3>
                           <p>
@@ -1273,7 +1277,7 @@ The code to be executed, by the function, is placed inside curly brackets: {}<br
                                       }
                                       <br></p>
                                   </div>
-                                  <a href="">Try it Yourself>></a>
+                                  <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_return" target="_blank">Try it Yourself>></a>
                                 </div>
                                 <h3>Why Functions?</h3> 
                                 <p>With functions you can reuse code <br>
@@ -1297,7 +1301,7 @@ The code to be executed, by the function, is placed inside curly brackets: {}<br
                                       let value = toCelsius(77); <br>
                                         <br></p>
                                     </div>
-                                    <a href="">Try it Yourself>></a>
+                                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_farenheit_to_celsius" target="_blank">Try it Yourself>></a>
                                   </div>
                                   <br>
                                   <p>Accessing a function with incorrect parameters can return an incorrect answer:
@@ -1314,7 +1318,7 @@ The code to be executed, by the function, is placed inside curly brackets: {}<br
                                       let value = toCelsius(); <br>
                                         <br></p>
                                     </div>
-                                    <a href="">Try it Yourself>></a>
+                                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_farenheit_to_celsius_3" target="_blank">Try it Yourself>></a>
                                   </div>
                                   <br>
                                   <p>Accessing a function without () returns the function and not the function result:</p>
@@ -1330,7 +1334,7 @@ The code to be executed, by the function, is placed inside curly brackets: {}<br
                                       let value = toCelsius; <br>
                                         <br></p>
                                     </div>
-                                    <a href="">Try it Yourself>></a>
+                                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_farenheit_to_celsius_2" target="_blank">Try it Yourself>></a>
                                   </div>
                                   <h3>Note</h3>
                                   <p>
@@ -1353,7 +1357,7 @@ The code to be executed, by the function, is placed inside curly brackets: {}<br
                                     <div class="div-in">
                                       let text = "The temperature is " + toCelsius(77) + " Celsius";
                                     </div>
-                                    <a href="">Try it Yourself>></a>
+                                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_variable" target="_blank">Try it Yourself>></a>
                                   </div>
                                   <h3>Local Variables</h3>
                                   <p>Variables declared within a JavaScript function, become LOCAL to the function. <br>
@@ -1373,7 +1377,7 @@ The code to be executed, by the function, is placed inside curly brackets: {}<br
                                           // code here can NOT use carName
                                           <br></p>
                                       </div>
-                                      <a href="">Try it Yourself>></a>
+                                      <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_scope" target="_blank">Try it Yourself>></a>
                                     </div> 
                                     <br>
                                     <p>Since local variables are only recognized inside their functions, variables with the same name can be used in different functions. <br>
@@ -1422,7 +1426,7 @@ With single quotes:<br>
                 <div class="div-in">
                   <p>button onclick="document.getElementById('demo').innerHTML = Date()">The time is? button</p>
                 </div>
-                <a href="">Try it Yourself>></a>
+                <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onclick1" target="_blank">Try it Yourself>></a>
               </div>
               <br>
               <p>In the example above, the JavaScript code changes the content of the element with id="demo". <br>
@@ -1433,7 +1437,7 @@ With single quotes:<br>
                 <div class="div-in">
                   <p> button onclick="this.innerHTML = Date()">The time is? button</p>
                 </div>
-                <a href="">Try it Yourself>></a>
+                <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onclick" target="_blank">Try it Yourself>></a>
               </div>
               <br>
               <p>JavaScript code is often several lines long. It is more common to see event attributes calling functions:</p>
@@ -1442,7 +1446,7 @@ With single quotes:<br>
                 <div class="div-in">
                   <p> button onclick="displayDate()">The time is? button</p>
                 </div>
-                <a href="">Try it Yourself>></a>
+                <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_events1" target="_blank">Try it Yourself>></a>
               </div>
               <h3>JavaScript Event Handlers</h3>
               <p>Event handlers can be used to handle and verify user input, user actions, and browser actions:<br>
@@ -1503,7 +1507,7 @@ With single quotes:<br>
                   <div class="div-in">
                     <p>Good day</p>
                   </div>
-                  <a href="">Try it Yourself>></a>
+                  <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_ifthen" target="_blank">Try it Yourself>></a>
                 </div>
                 <h3>The else Statement</h3>
                 <p>Use the else statement to specify a block of code to be executed if the condition is false.</p>
@@ -1528,7 +1532,7 @@ With single quotes:<br>
                   <div class="div-in">
                     <p>Good day</p>
                   </div>
-                  <a href="">Try it Yourself>></a>
+                  <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_ifthenelse" target="_blank">Try it Yourself>></a>
                 </div>
                 <h3>The else if Statement</h3>
                 <p>Use the else if statement to specify a new condition if the first condition is false.</p>
@@ -1559,7 +1563,7 @@ With single quotes:<br>
                   <div class="div-in">
                     <p>Good morning</p>
                   </div>
-                  <a href="">Try it Yourself>></a>
+                  <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_elseif" target="_blank">Try it Yourself>></a>
                 </div>
            </section>
            <section class="tab-contents" id="methods">
@@ -1594,7 +1598,7 @@ With single quotes:<br>
                       <span></</span>body<span>></span> <br>
                       <span></</span>html<span>></span> </p> <br>
                   </div>
-                  <a href="">Try it Yourself>></a>
+                  <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_method" target="_blank">Try it Yourself>></a>
                 </div>
                 <br>
                 <p>In the example above, getElementById is a method, while innerHTML is a property.</p>
@@ -1729,6 +1733,393 @@ With single quotes:<br>
 <br>
                 Later, in HTML DOM Level 3, more objects, collections, and properties were added.</p><br>
            </section>
+           <section class="tab-contents" id="element">
+            <h3>JavaScript HTML DOM Elements
+            </h3>
+            <p>This page teaches you how to find and access HTML elements in an HTML page.</p>
+            <h3>Finding HTML Elements</h3>
+            <p>Often, with JavaScript, you want to manipulate HTML elements. <br>
+              <br>
+              To do so, you have to find the elements first. There are several ways to do this:<br>
+              <br>
+              Finding HTML elements by id<br>
+              Finding HTML elements by tag name<br>
+              Finding HTML elements by class name<br>
+              Finding HTML elements by CSS selectors<br>
+              Finding HTML elements by HTML object collections<br>
+              </p>
+              <h3>Finding HTML Element by Id</h3>
+              <p>The easiest way to find an HTML element in the DOM, is by using the element id.<br>
+                <br>
+                This example finds the element with id="intro":</p><br>
+                <div class="div-out h-48">
+                  <p>Example</p>
+                  <div class="div-in">
+                    const element = document.getElementById("intro");
+                  </div>
+                  <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementbyid" target="_blank">Try it Yourself>></a>
+                </div>
+                <br>
+                <p>If the element is found, the method will return the element as an object (in element). <br>
+ <br>
+                  If the element is not found, element will contain null.
+                  
+                  </p>
+                  <h3>Finding HTML Elements by Tag Name
+                  </h3>
+                  <p>This example finds all <p> elements:</p>
+                  <br>
+                  <div class="div-out h-48">
+                    <p>Example</p>
+                    <div class="div-in">
+                      const element = document.getElementsByTagName("p");
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbytagname2" target="_blank">Try it Yourself>></a>
+                  </div>
+                  <br>
+                  <p>This example finds the element with id="main", and then finds all <p> elements inside "main":</p>
+                  <br>
+                  <div class="div-out h-56">
+                    <p>Example</p>
+                    <div class="div-in">
+                      const x = document.getElementById("main"); <br>
+const y = x.getElementsByTagName("p");
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbytagname" target="_blank">Try it Yourself>></a>
+                  </div>
+                  <h3>Finding HTML Elements by Class Name
+                  </h3>
+                  <p>If you want to find all HTML elements with the same class name, use getElementsByClassName(). <br>
+                    This example returns a list of all elements with class="intro".</p> <br>
+                    <div class="div-out h-48">
+                      <p>Example</p>
+                      <div class="div-in">
+                        const x = document.getElementsByClassName("intro");
+                      </div>
+                      <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementsbyclassname" target="_blank">Try it Yourself>></a>
+                    </div>
+                    <h3>Finding HTML Elements by CSS Selectors</h3>
+                    <p>If you want to find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the querySelectorAll() method. <br>
+                      <br>
+                      This example returns a list of all <p> elements with class="intro".</p>
+                      <br>
+                      <div class="div-out h-48">
+                        <p>Example</p>
+                        <div class="div-in">
+                          const x = document.querySelectorAll("p.intro");
+                        </div>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_queryselectorall" target="_blank">Try it Yourself>></a>
+                      </div>
+                      <h3>Finding HTML Elements by HTML Object Collections</h3>
+                      <p>This example finds the form element with id="frm1", in the forms collection, and displays all element values:</p>
+                      <br>
+                      <div class="div-out h-96">
+                        <p>Example</p>
+                        <div class="div-in">
+                          const x = document.forms["frm1"]; <br>
+let text = ""; <br>
+for (let i = 0; i < x.length; i++) { <br>
+  text += x.elements[i].value + "<span><</span>br<span>></span>"; <br>
+} <br>
+document.getElementById("demo").innerHTML = text;
+                        </div>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_form_elements" target="_blank">Try it Yourself>></a>
+                      </div>
+           </section>
+           <section class="tab-contents" id="dom">
+            <h3>JavaScript HTML DOM Events
+            </h3>
+            <h3>Reacting to Events
+            </h3>
+            <p>A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element. <br>
+              <br>
+              To execute code when a user clicks on an element, add JavaScript code to an HTML event attribute:<br>
+              <br>
+              onclick=JavaScript<br>
+              Examples of HTML events:<br>
+              <br>
+              When a user clicks the mouse<br>
+              When a web page has loaded<br>
+              When an image has been loaded<br>
+              When the mouse moves over an element<br>
+              When an input field is changed<br>
+              When an HTML form is submitted<br>
+              When a user strokes a key<br>
+              In this example, the content of the <h1> element is changed when a user clicks on it:</p><br>
+                <div class="div-out h-96">
+                  <p>Example</p>
+                  <div class="div-in">
+                    <p><div class="w3-code notranslate htmlHigh">
+                      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> onclick<span class="attributevaluecolor" style="color:mediumblue">="this.innerHTML = 'Ooops!'"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Click on this text!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                       </div></p>
+                  </div>
+                  <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onclick2" target="_blank">Try it Yourself>></a>
+                </div>
+                <br>
+                <p>In this example, a function is called from the event handler:
+                </p>
+                <br>
+                <div class="div-out" style="height: 590px;">
+                  <p>Example</p>
+                  <div class="div-in">
+                    <p><div class="w3-code notranslate htmlHigh">
+                      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> onclick<span class="attributevaluecolor" style="color:mediumblue">="changeText(this)"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Click on this text!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                       <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:white"><br>
+                      <span class="jskeywordcolor" style="color:mediumblue">function</span> changeText(id) {<span class="jsnumbercolor" style="color:red">
+                      </span><br><span class="jsnumbercolor" style="color:red">
+                      </span>&nbsp;&nbsp;id.<span class="jspropertycolor" style="color:white">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Ooops!"</span>;<br><span class="jsnumbercolor" style="color:red">
+                      </span>}<br>
+                      </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                       </div></p>
+                  </div>
+                  <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onclick3" target="_blank">Try it Yourself>></a>
+                </div>
+                <h3>HTML Event Attributes
+                </h3>
+                <p>To assign events to HTML elements you can use event attributes.</p>
+                <br>
+                <div class="div-out h-48">
+                  <p>Example</p>
+                  <div class="div-in">
+                    <div class="w3-code notranslate htmlHigh">
+                      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> onclick<span class="attributevaluecolor" style="color:mediumblue">="displayDate()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Try it<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                       </div>
+                  </div>
+                  <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_events1" target="_blank">Try it Yourself>></a>
+                </div>
+                <br>
+                <p>In the example above, a function named displayDate will be executed when the button is clicked.
+                </p>
+                <h3>Assign Events Using the HTML DOM
+                </h3>
+                <p>The HTML DOM allows you to assign events to HTML elements using JavaScript:</p>
+                <div class="div-out h-96">
+                  <p>Example</p>
+                  <div class="div-in">
+                    <div class="w3-code notranslate htmlHigh">
+                      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:white"><br>
+                      document.<span class="jspropertycolor" style="color:white">getElementById</span>(<span class="jsstringcolor" style="color:brown">"myBtn"</span>).<span class="jspropertycolor" style="color:white">onclick</span> = displayDate;<br>
+                      </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                       </div>
+                  </div>
+                  <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_events2" target="_blank">Try it Yourself>></a>
+                </div>
+                <br>
+                <p>In the example above, a function named displayDate is assigned to an HTML element with the id="myBtn". <br>
+<br>
+                  The function will be executed when the button is clicked.</p>
+                  <h3>The onload and onunload Events
+                  </h3>
+                  <p>The onload and onunload events are triggered when the user enters or leaves the page. <br>
+                    <br>
+                    The onload event can be used to check the visitor's browser type and browser version, and load the proper version of the web page based on the information.<br>
+                    <br>
+                    The onload and onunload events can be used to deal with cookies.</p><br>
+                    <div class="div-out h-48">
+                      <p>Example</p>
+                      <div class="div-in">
+                        <div class="w3-code notranslate htmlHigh">
+                          <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="attributecolor" style="color:red"> onload<span class="attributevaluecolor" style="color:mediumblue">="checkCookies()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                           </div>
+                      </div>
+                      <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_onload" target="_blank">Try it Yourself>></a>
+                    </div>
+                    <h3>The onchange Event
+                    </h3>
+                    <p>The onchange event is often used in combination with validation of input fields. <br>
+                      <br>
+                      Below is an example of how to use the onchange. The upperCase() function will be called when a user changes the content of an input field.</p><br>
+                      <div class="div-out h-48">
+                        <p>Example</p>
+                        <div class="div-in">
+                          <div class="w3-code notranslate htmlHigh">
+                            <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="fname"</span>
+                            onchange<span class="attributevaluecolor" style="color:mediumblue">="upperCase()"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+                        </div>
+                        <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_events_onchange" target="_blank">Try it Yourself>></a>
+                      </div>
+           </section>
+           <section class="tab-contents" id="listener">
+            <h3>JavaScript HTML DOM EventListener
+            </h3>
+            <h3>The addEventListener() method</h3>
+            <div class="div-out h-48">
+              <p>Add an event listener that fires when a user clicks a button:</p>
+              <div class="div-in">
+                <p>document.getElementById("myBtn").addEventListener("click", displayDate);
+                </p>
+              </div>
+              <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_displaydate" target="_blank">Try it Yourself>></a>
+            </div>
+            <br>
+            <p>The addEventListener() method attaches an event handler to the specified element. <br>
+              <br>
+              The addEventListener() method attaches an event handler to an element without overwriting existing event handlers.<br>
+              <br>
+              You can add many event handlers to one element.<br>
+              <br>
+              You can add many event handlers of the same type to one element, i.e two "click" events.<br>
+              <br>
+              You can add event listeners to any DOM object not only HTML elements. i.e the window object.<br>
+              <br>
+              The addEventListener() method makes it easier to control how the event reacts to bubbling.<br>
+              <br>
+              When using the addEventListener() method, the JavaScript is separated from the HTML markup, for better readability and allows you to add event listeners even when you do not control the HTML markup.<br>
+              <br>
+              You can easily remove an event listener by using the removeEventListener() method.</p><br>
+              <h3>Syntax</h3>
+              <p>element.addEventListener(event, function, useCapture); <br>
+                <br>
+                The first parameter is the type of the event (like "click" or "mousedown" or any other HTML DOM Event.)<br>
+                <br>
+                The second parameter is the function we want to call when the event occurs.<br>
+                <br>
+                The third parameter is a boolean value specifying whether to use event bubbling or event capturing. This parameter is optional.<br>
+                <br>
+                Note that you don't use the "on" prefix for the event; use "click" instead of "onclick".</p><br>
+                <h3>Add an Event Handler to an Element</h3>
+                <div class="div-out h-48">
+                  <p>Alert "Hello World!" when the user clicks on an element:</p>
+                  <div class="div-in">
+                    <p>element.addEventListener("click", function(){ alert("Hello World!"); });
+                    </p>
+                  </div>
+                  <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_add" target="_blank">Try it Yourself>></a>
+                </div>
+                <br>
+                <p>You can also refer to an external "named" function:
+                </p>
+                <br>
+                <div class="div-out h-96">
+                  <p>Alert "Hello World!" when the user clicks on an element:</p>
+                  <div class="div-in"> 
+                    <p>element.addEventListener("click", myFunction); <br>
+                      <br>
+                      function myFunction() {<br>
+                        alert ("Hello World!");<br>
+                      }<br>
+                    </p>
+                  </div>
+                  <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_add2" target="_blank">Try it Yourself>></a>
+                </div>
+                <h3>Add Many Event Handlers to the Same Element
+                </h3>
+                <p>The addEventListener() method allows you to add many events to the same element, without overwriting existing events:
+                </p>
+                <br>
+                <div class="div-out h-52">
+                  <p>Example</p>
+                  <div class="div-in"> 
+                    <p>element.addEventListener("click", myFunction); <br>
+                      element.addEventListener("click", mySecondFunction);
+                    </p>
+                  </div>
+                  <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_add_many" target="_blank">Try it Yourself>></a>
+                </div>
+                <br>
+                <p>You can add events of different types to the same element:</p>
+                <br>
+                <div class="div-out h-64">
+                  <p>Example</p>
+                  <div class="div-in">  
+                    <p>element.addEventListener("mouseover", myFunction); <br>
+                      element.addEventListener("click", mySecondFunction); <br>
+                      element.addEventListener("mouseout", myThirdFunction); <br>
+                    </p>
+                  </div>
+                  <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_add_many2" target="_blank">Try it Yourself>></a>
+                </div>
+                <h3>Add an Event Handler to the window Object
+                </h3>
+                <p>The addEventListener() method allows you to add event listeners on any HTML DOM object such as HTML elements, the HTML document, the window object, or other objects that support events, like the xmlHttpRequest object.</p><br>
+                <div class="div-out h-64">
+                  <p>Add an event listener that fires when a user resizes the window:</p>
+                  <div class="div-in">   
+                    <p>window.addEventListener("resize", function(){ <br>
+                      document.getElementById("demo").innerHTML = sometext; <br>
+                    }); <br>
+                    </p>
+                  </div>
+                  <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_dom" target="_blank">Try it Yourself>></a>
+                </div>
+                <h3>Passing Parameters</h3>
+                <p>When passing parameter values, use an "anonymous function" that calls the specified function with the parameters:                </p>
+                <br>
+                <div class="div-out h-64">
+                  <p>Example</p>
+                  <div class="div-in">  
+                    <p>element.addEventListener("click", function(){ myFunction(p1, p2); });
+                    </p>
+                  </div>
+                  <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_parameters" target="_blank">Try it Yourself>></a>
+                </div>
+                <h3>Event Bubbling or Event Capturing?
+                </h3>
+                <p>There are two ways of event propagation in the HTML DOM, bubbling and capturing. <br>
+                  <br>
+                  Event propagation is a way of defining the element order when an event occurs. If you have a <p> element inside a <div> element, and the user clicks on the <p> element, which element's "click" event should be handled first?<br>
+                    <br>
+                  In bubbling the inner most element's event is handled first and then the outer: the <p> element's click event is handled first, then the <div> element's click event.<br>
+                    <br>
+                  In capturing the outer most element's event is handled first and then the inner: the <div> element's click event will be handled first, then the <p> element's click event.<br>
+                    <br>
+                  With the addEventListener() method you can specify the propagation type by using the "useCapture" parameter:<br>
+                  <br>
+                  addEventListener(event, function, useCapture);<br>
+                  <br>
+                  The default value is false, which will use the bubbling propagation, when the value is set to true, the event uses the capturing propagation.</p><br>
+                  <div class="div-out h-64">
+                    <p>Example</p>
+                    <div class="div-in">  
+                      <p>document.getElementById("myP").addEventListener("click", myFunction, true); <br>
+                        document.getElementById("myDiv").addEventListener("click", myFunction, true); <br>
+                      </p>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_usecapture" target="_blank">Try it Yourself>></a>
+                  </div>
+                  <h3>The removeEventListener() method
+                  </h3>
+                  <p>The removeEventListener() method removes event handlers that have been attached with the addEventListener() method:</p> <br>
+                  <div class="div-out h-64">
+                    <p>Example</p>
+                    <div class="div-in">  
+                      <p>element.removeEventListener("mousemove", myFunction);
+                      </p>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_remove" target="_blank">Try it Yourself>></a>
+                  </div>
+           </section>
+           <footer class="bg-black rounded-lg shadow dark:bg-orange-500 m-4 mt-20 mb-28">
+            <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                      <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">JS:MEMORY</span>
+                    </a>
+                    <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0 dark:text-white">
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="my-6 border-white sm:mx-auto dark:border-white lg:my-8" />
+                <span class="block text-sm text-white sm:text-center dark:text-white">© 2023 <a href="https://flowbite.com/" class="hover:underline">JS:MEMORY™</a>. All Rights Reserved.</span>
+            </div>
+          </footer>
   </div>
 </div>
 <script src="app.js"></script>

@@ -14,8 +14,10 @@ body{
     width: 97%;
     margin: 0 auto;
     padding-left: 30px;
-    padding-bottom: 200px;
     padding-top: 25px;
+}
+#close , #open{
+    display: none;
 }
 .tab-contents.active-tab{
     display: block;
@@ -34,6 +36,7 @@ body{
 .tab-contents h3{
     font-size: 40px;
     padding: 25px 0 ;
+    color: rgb(249 115 22);
 }
 .div-out{
     width: 100%;
@@ -71,5 +74,30 @@ p{
 table td{
     padding: 5px 50px;
     text-align: justify;
-    color:  rgb(249 115 22);
+    color: white;
+}
+@media only screen and (max-width:768px){
+    #side{
+        position: fixed;
+        top: 0;
+        left: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top:50px ;
+        z-index: 2;
+        transition: left 0.5s;
+    }
+    #open{
+        display: block;
+    }
+}
+@media only screen and (max-width:680px){
+    #fb{
+        display: none;
+    }
+}
+@media only screen and (max-width:440px){
+    #divh1{
+        margin: 0 auto;
+    }
 }

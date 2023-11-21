@@ -54,3 +54,17 @@ function opentab(tabname,tab){
         h1nav.textContent = 'DOM Event Listener'
     }
 }
+let sidemenu = document.querySelector('#side');
+let open1 = document.getElementById("open");
+let close1 = document.getElementById("close");
+
+function openmenu(){
+    sidemenu.style.left = "0"
+    open1.style.display = "none";
+    close1.style.display = "block";
+}
+function closemenu(){
+    sidemenu.style.left = '-200px';
+    close1.style.display = "none";
+    open1.style.display = "block";
+}
