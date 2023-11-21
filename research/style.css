@@ -76,6 +76,9 @@ table td{
     text-align: justify;
     color: white;
 }
+footer{
+    margin-bottom: 80px;
+}
 @media only screen and (max-width:768px){
     #side{
         position: fixed;
