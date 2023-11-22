@@ -580,10 +580,10 @@ You declare a JavaScript variable with the var or the let keyword: <br>
             <p>In the example below, we create a variable called carName and assign the value "Volvo" to it. <br>
 <br>
               Then we "output" the value inside an HTML paragraph with id="demo":</p> <br>
-              <div class="div-out h-80">
+              <div class="div-out h-80 ">
                 <p>Example</p>
                 <div class="div-in">
-                  <p>p id="demo" p <br>
+                  <p id="codes">p id="demo" p <br>
                   script <br>
                   let carName = "Volvo"; <br>
                   document.getElementById("demo").innerHTML = carName <br>
@@ -601,7 +601,7 @@ You declare a JavaScript variable with the var or the let keyword: <br>
  <br>
 Start the statement with let and separate the variables by comma: <br>
               </p> <br>
-              <div class="div-out h-44">
+              <div class="div-out h-44 max-md:h-56">
                 <p>Example</p>
                 <div class="div-in">
                   <p>let person = "John Doe", carName = "Volvo", price = 200;<br></p>
@@ -899,7 +899,7 @@ The object data type can contain: <br>
 </p>
       </div>
       <br>
-      <div class="div-out" style="height: 680px;">
+      <div class="div-out max-md:h-5/6" style="height: 680px;">
         <p>Examples</p>
         <div class="div-in">
           <p>// Numbers: <br>
@@ -1092,7 +1092,7 @@ Numbers can be written with, or without decimals: <br>
                 <div class="div-out h-44">
                   <p>Example</p>
                   <div class="div-in">
-                    <p>let x = BigInt("123456789012345678901234567890");<br></p>
+                    <p class="max-md:text-xs">let x = BigInt("123456789012345678901234567890");<br></p>
                   </div>
                   <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_bigint" target="_blank">Try it Yourself>></a>
                 </div>
@@ -1133,7 +1133,7 @@ Numbers can be written with, or without decimals: <br>
                   <p>JavaScript objects are written with curly braces {}. <br>
  <br> 
                     Object properties are written as name:value pairs, separated by commas.</p><br>
-                    <div class="div-out h-44">
+                    <div class="div-out h-44 max-md:h-56">
                       <p>Example</p>
                       <div class="div-in">
                         <p>const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};<br></p>
@@ -1171,7 +1171,7 @@ Numbers can be written with, or without decimals: <br>
                       <h3>Undefined</h3>
                       <p>In JavaScript, a variable without a value, has the value undefined. The type is also undefined.</p>
                       <br>
-                      <div class="div-out h-44">
+                      <div class="div-out h-44 max-md:h-56">
                         <p>Example</p>
                         <div class="div-in">
                           <p>let car;    // Value is undefined, type is undefined<br></p>
@@ -1183,7 +1183,7 @@ Numbers can be written with, or without decimals: <br>
 
                       </p>
                       <br>
-                      <div class="div-out h-44">
+                      <div class="div-out h-44 max-md:h-56">
                         <p>Example</p>
                         <div class="div-in">
                           <p>car = undefined;    // Value is undefined, type is undefined
@@ -1195,7 +1195,7 @@ Numbers can be written with, or without decimals: <br>
                       <p>An empty value has nothing to do with undefined. <br>
 <br>
                         An empty string has both a legal value and a type.</p> <br>
-                        <div class="div-out h-44">
+                        <div class="div-out h-44 max-md:h-56">
                           <p>Example</p>
                           <div class="div-in">
                             <p>let car = "";    // The value is "", the typeof is "string"
@@ -1263,7 +1263,7 @@ The code to be executed, by the function, is placed inside curly brackets: {}<br
                                 If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.<br>
                                 <br>
                                 Functions often compute a return value. The return value is "returned" back to the "caller":</p><br>
-                                <div class="div-out" style="height: 400px;">
+                                <div  class="div-out max-md:text-sm" style="height: 400px;">
                                   <p>Example <br>
                                     Calculate the product of two numbers, and return the result:
                                   </p>
@@ -1273,8 +1273,7 @@ The code to be executed, by the function, is placed inside curly brackets: {}<br
                                       <br>
                                       function myFunction(a, b) { <br>
                                       // Function returns the product of a and b <br>
-                                        return a * b; <br>
-                                      }
+                                        return a * b; }
                                       <br></p>
                                   </div>
                                   <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_return" target="_blank">Try it Yourself>></a>
@@ -1355,7 +1354,7 @@ The code to be executed, by the function, is placed inside curly brackets: {}<br
                                     <p>You can use the function directly, as a variable value:
                                     </p>
                                     <div class="div-in">
-                                      let text = "The temperature is " + toCelsius(77) + " Celsius";
+                                      <p class="max-md:text-xs">let text = "The temperature is " + toCelsius(77) + " Celsius";</p>
                                     </div>
                                     <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_variable" target="_blank">Try it Yourself>></a>
                                   </div>
@@ -1367,7 +1366,7 @@ The code to be executed, by the function, is placed inside curly brackets: {}<br
                                       <p>Example
                                       </p>
                                       <div class="div-in">
-                                        <p>// code here can NOT use carName <br>
+                                        <p class="max-md:text-base">// code here can NOT use carName <br>
 <br>
                                           function myFunction() { <br>
                                             let carName = "Volvo"; <br>
@@ -1422,9 +1421,9 @@ With single quotes:<br>
               <br>
               <p>In the following example, an onclick attribute (with code), is added to a button element:</p>
               <br>
-              <div class="div-out" style="height: 150px;">
+              <div class="div-out h-40 max-md:h-64">
                 <div class="div-in">
-                  <p>button onclick="document.getElementById('demo').innerHTML = Date()">The time is? button</p>
+                  <p class="max-md:text-sm">button onclick=" document.getElementById('demo').innerHTML = Date()">The time is? button</p>
                 </div>
                 <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onclick1" target="_blank">Try it Yourself>></a>
               </div>
@@ -1551,7 +1550,7 @@ With single quotes:<br>
                   <p>example <br>
                     If time is less than 10:00, create a "Good morning" greeting, if not, but time is less than 20:00, create a "Good day" greeting, otherwise a "Good evening":</p>
                   <div class="div-in">
-                    <p>if (time < 10) { <br>
+                    <p class="max-md:text-sm">if (time < 10) { <br>
                       greeting = "Good morning"; <br>
                     } else if (time < 20) { <br>
                       greeting = "Good day"; <br>
@@ -1586,7 +1585,7 @@ With single quotes:<br>
                 <div class="div-out" style="height: 550px;">
                   <p>Example <br></p>
                   <div class="div-in">
-                    <p><span><</span>html<span>></span> <br>
+                    <p class="max-md:text-sm"><span><</span>html<span>></span> <br>
                       <span><</span>body<span>></span> <br>
                       <br>
                       <span><</span>p id="demo"><span></</span> p<span>></span>  <br>
@@ -1816,12 +1815,12 @@ const y = x.getElementsByTagName("p");
                       <div class="div-out h-96">
                         <p>Example</p>
                         <div class="div-in">
-                          const x = document.forms["frm1"]; <br>
+                         <p id="el-p"> const x = document.forms["frm1"]; <br>
 let text = ""; <br>
 for (let i = 0; i < x.length; i++) { <br>
   text += x.elements[i].value + "<span><</span>br<span>></span>"; <br>
 } <br>
-document.getElementById("demo").innerHTML = text;
+document.getElementById("demo").innerHTML = text;</p>
                         </div>
                         <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_form_elements" target="_blank">Try it Yourself>></a>
                       </div>
@@ -1846,7 +1845,7 @@ document.getElementById("demo").innerHTML = text;
               When an HTML form is submitted<br>
               When a user strokes a key<br>
               In this example, the content of the <h1> element is changed when a user clicks on it:</p><br>
-                <div class="div-out h-96">
+                <div class="div-out h-96 max-md:text-sm">
                   <p>Example</p>
                   <div class="div-in">
                     <p><div class="w3-code notranslate htmlHigh">
@@ -1898,7 +1897,7 @@ document.getElementById("demo").innerHTML = text;
                 <h3>Assign Events Using the HTML DOM
                 </h3>
                 <p>The HTML DOM allows you to assign events to HTML elements using JavaScript:</p>
-                <div class="div-out h-96">
+                <div class="div-out h-96 max-md:text-sm">
                   <p>Example</p>
                   <div class="div-in">
                     <div class="w3-code notranslate htmlHigh">
@@ -1948,10 +1947,10 @@ document.getElementById("demo").innerHTML = text;
             <h3>JavaScript HTML DOM EventListener
             </h3>
             <h3>The addEventListener() method</h3>
-            <div class="div-out h-48">
+            <div class="div-out h-48 max-md:h-56">
               <p>Add an event listener that fires when a user clicks a button:</p>
               <div class="div-in">
-                <p>document.getElementById("myBtn").addEventListener("click", displayDate);
+                <p id="lis-p">document.getElementById("myBtn") .addEventListener("click", displayDate);
                 </p>
               </div>
               <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_displaydate" target="_blank">Try it Yourself>></a>
@@ -1983,7 +1982,7 @@ document.getElementById("demo").innerHTML = text;
                 <br>
                 Note that you don't use the "on" prefix for the event; use "click" instead of "onclick".</p><br>
                 <h3>Add an Event Handler to an Element</h3>
-                <div class="div-out h-48">
+                <div class="div-out h-48 max-sm:h-56">
                   <p>Alert "Hello World!" when the user clicks on an element:</p>
                   <div class="div-in">
                     <p>element.addEventListener("click", function(){ alert("Hello World!"); });
@@ -2012,7 +2011,7 @@ document.getElementById("demo").innerHTML = text;
                 <p>The addEventListener() method allows you to add many events to the same element, without overwriting existing events:
                 </p>
                 <br>
-                <div class="div-out h-52">
+                <div class="div-out h-52 max-sm:h-72">
                   <p>Example</p>
                   <div class="div-in"> 
                     <p>element.addEventListener("click", myFunction); <br>
@@ -2024,10 +2023,10 @@ document.getElementById("demo").innerHTML = text;
                 <br>
                 <p>You can add events of different types to the same element:</p>
                 <br>
-                <div class="div-out h-64">
+                <div class="div-out h-64 max-sm:h-80">
                   <p>Example</p>
                   <div class="div-in">  
-                    <p>element.addEventListener("mouseover", myFunction); <br>
+                    <p class="max-sm:text-sm">element.addEventListener("mouseover", myFunction); <br>
                       element.addEventListener("click", mySecondFunction); <br>
                       element.addEventListener("mouseout", myThirdFunction); <br>
                     </p>
@@ -2037,10 +2036,10 @@ document.getElementById("demo").innerHTML = text;
                 <h3>Add an Event Handler to the window Object
                 </h3>
                 <p>The addEventListener() method allows you to add event listeners on any HTML DOM object such as HTML elements, the HTML document, the window object, or other objects that support events, like the xmlHttpRequest object.</p><br>
-                <div class="div-out h-64">
+                <div class="div-out h-64 max-sm:h-72">
                   <p>Add an event listener that fires when a user resizes the window:</p>
                   <div class="div-in">   
-                    <p>window.addEventListener("resize", function(){ <br>
+                    <p class="max-sm:text-sm">window.addEventListener("resize", function(){ <br>
                       document.getElementById("demo").innerHTML = sometext; <br>
                     }); <br>
                     </p>
@@ -2076,7 +2075,7 @@ document.getElementById("demo").innerHTML = text;
                   <div class="div-out h-64">
                     <p>Example</p>
                     <div class="div-in">  
-                      <p>document.getElementById("myP").addEventListener("click", myFunction, true); <br>
+                      <p class="max-sm:text-xs">document.getElementById("myP").addEventListener("click", myFunction, true); <br>
                         document.getElementById("myDiv").addEventListener("click", myFunction, true); <br>
                       </p>
                     </div>
@@ -2088,7 +2087,7 @@ document.getElementById("demo").innerHTML = text;
                   <div class="div-out h-64">
                     <p>Example</p>
                     <div class="div-in">  
-                      <p>element.removeEventListener("mousemove", myFunction);
+                      <p id="el-p">element.removeEventListener("mousemove", myFunction);
                       </p>
                     </div>
                     <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_addeventlistener_remove" target="_blank">Try it Yourself>></a>

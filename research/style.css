@@ -13,7 +13,6 @@ body{
     color: white;
     width: 97%;
     margin: 0 auto;
-    padding-left: 30px;
     padding-top: 25px;
 }
 #close , #open{
@@ -77,6 +76,9 @@ table td{
     color: white;
 }
 @media only screen and (max-width:768px){
+    table td{
+        padding: 0 10px;
+    }
     #side{
         position: fixed;
         top: 0;
@@ -90,14 +92,34 @@ table td{
     #open{
         display: block;
     }
+    #codes{
+        font-size: 11px;
+    }
 }
 @media only screen and (max-width:680px){
+    #lis-p{
+        font-size: 14px;
+    }
+    table td{
+        font-size: 14px;
+    }
     #fb{
         display: none;
     }
 }
 @media only screen and (max-width:440px){
+    #el-p{
+        font-size: 14px;
+    }
+    table td{
+        font-size: 12px;
+    }
     #divh1{
         margin: 0 auto;
+    }
+}
+@media only screen and (max-width:360px){
+    table td {
+        font-size: 10px;
     }
 }
